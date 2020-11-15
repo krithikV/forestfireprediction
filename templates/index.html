@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Forest Fire Prediction</title>
+  <link rel="icon" type="image/png" href="image.png"/>
+  <meta name="generator" content="Google Web Designer 9.0.2.0915">
+  <style type="text/css" id="gwd-text-style">
+    p {
+      margin: 0px;
+    }
+    h1 {
+      margin: 0px;
+    }
+    h2 {
+      margin: 0px;
+    }
+    h3 {
+      margin: 0px;
+    }
+  </style>
+  <style type="text/css">
+    html, body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+    }
+    body {
+      background-color: transparent;
+      transform: perspective(1400px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-style: preserve-3d;
+    }
+    .gwd-p-1ke2 {
+      position: absolute;
+      width: 500px;
+      height: 69.3333px;
+      top: 20px;
+      font-family: Roboto;
+      text-align: center;
+      transform-style: preserve-3d;
+      left: 50%;
+      transform-origin: 250px 34.6583px;
+      transform: translate3d(-250px, 1px, 0px) rotateZ(0.0632056deg);
+    }
+    .gwd-div-qfxi {
+      left: 0px;
+      top: 0px;
+    }
+    .gwd-form-1i49 {
+      left: 0px;
+      top: 0px;
+    }
+    .gwd-div-d27h {
+      left: 0px;
+      top: 78px;
+    }
+    .gwd-label-1fhz {
+      position: absolute;
+      width: 100px;
+      height: 20px;
+      left: 50%;
+      transform-style: preserve-3d;
+      top: 293px;
+      transform: translate3d(-100px, -134px, 0px);
+    }
+    .gwd-input-l4iv {
+      position: absolute;
+      width: 100px;
+      height: 20px;
+      left: 50%;
+      transform-style: preserve-3d;
+      top: 292px;
+      transform: translate3d(1px, -134px, 0px);
+    }
+    .gwd-label-2yb3 {
+      position: absolute;
+      width: 100px;
+      height: 20px;
+      left: 50%;
+      transform-style: preserve-3d;
+      top: 321px;
+      transform: translate3d(-99px, -136px, 0px);
+    }
+    .gwd-input-1l3n {
+      position: absolute;
+      width: 100px;
+      height: 20px;
+      left: 50%;
+      transform-style: preserve-3d;
+      top: 318px;
+      transform: translate3d(3px, -131px, 0px);
+    }
+    .gwd-label-22m9 {
+      position: absolute;
+      width: 100px;
+      height: 20px;
+      left: 50%;
+      transform-style: preserve-3d;
+      top: 349px;
+      transform: translate3d(-99px, -133px, 0px);
+    }
+    .gwd-input-1r27 {
+      position: absolute;
+      width: 100px;
+      height: 20px;
+      left: 50%;
+      transform-style: preserve-3d;
+      top: 347px;
+      transform: translate3d(3px, -134px, 0px);
+    }
+    .gwd-button-oz37 {
+      position: absolute;
+      width: 100px;
+      height: 24px;
+      left: 50%;
+      transform-style: preserve-3d;
+      top: 379px;
+      transform: translate3d(-42px, -133px, 0px);
+    }
+    .gwd-label-2sea {
+      position: absolute;
+      height: 20px;
+      left: 50%;
+      transform-style: preserve-3d;
+      top: 50%;
+      width: 150px;
+      transform: translate3d(-75px, 56px, 0px);
+    }
+    .gwd-label-ecnw {
+      position: absolute;
+      width: 100px;
+      height: 20px;
+      left: 50%;
+      transform-style: preserve-3d;
+      top: 100%;
+      transform: translate3d(-50px, -53px, 0px);
+    }
+    .gwd-label-tl7w {
+      position: absolute;
+      height: 20px;
+      left: 50%;
+      transform-style: preserve-3d;
+      top: 100%;
+      width: 150px;
+      transform: translate3d(-64px, -20px, 0px);
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic|Source+Code+Pro:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+</head>
+
+<body class="htmlNoPages">
+  <h1 class="gwd-p-1ke2">Forest Fire Prediction</h1>
+  <form action="/predict" method="post">
+    <label id="label_1" class="gwd-label-1fhz gwd-gen-1excgwdanimation">Temperature:</label>
+    <input type="text" name="Temperature" id="first_name" class="gwd-input-l4iv gwd-gen-13prgwdanimation" placeholder="in Celcius">
+    <label id="label_2" class="gwd-label-2yb3 gwd-gen-1ovpgwdanimation">Oxygen</label>
+    <input type="text" name="Oxygen" id="last_name" class="gwd-input-1l3n gwd-gen-166ngwdanimation" placeholder="in ppm">
+    <label id="label_3" class="gwd-label-22m9 gwd-gen-1kg0gwdanimation">Humidity</label>
+    <input type="text" name="Humidity" id="_name" class="gwd-input-1r27 gwd-gen-1mgsgwdanimation" placeholder="in Percentage">
+    <button id="button_1" type="submit" class="gwd-button-oz37 gwd-gen-spmugwdanimation">Predict</button>
+    <label id="label_4" class="gwd-label-2sea gwd-gen-1cx0gwdanimation">{{pred}}</label>
+  </form>
+  <label id="label_5" class="gwd-label-ecnw">V Krithik</label>
+  <a href="https://docs.google.com/document/d/1tO1cfgAXHfWkVE2albjskzEgjIFvOc3pock1X4oUvA4/edit?usp=sharing" id="label_6" class="gwd-label-tl7w">MIT License 2020</a>
+</body>
+
+</html>
